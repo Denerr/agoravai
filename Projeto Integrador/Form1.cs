@@ -40,9 +40,11 @@ namespace Projeto_Integrador
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            if(txtUsuario.Text == "Dener" && txtSenha.Text == "123")
+            if (txtUsuario.Text == "Dener" && txtSenha.Text == "123")
             {
                 MessageBox.Show("Bem Vindo!!");
+                Form3 f3 = new Form3();
+                f3.Show();
             }
             else
             {

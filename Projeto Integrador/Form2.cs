@@ -31,10 +31,12 @@ namespace Projeto_Integrador
             else if(txtUsuario.Text == "" && txtSenha.Text == "" && txtRepeteSenha.Text == "")
             {
                 MessageBox.Show("Cadastro feito com Sucesso!!");
+                this.Close();
             }
             else
             {
                 MessageBox.Show("Cadastro feito com Sucesso!!");
+                this.Close();
             }
         }
     }
