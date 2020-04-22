@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Projeto_Integrador.Properties
+namespace TelaLogin.Properties
 {
 
 
