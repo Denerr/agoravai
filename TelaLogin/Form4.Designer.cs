@@ -31,7 +31,6 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
             this.textBox44 = new System.Windows.Forms.TextBox();
             this.textBox45 = new System.Windows.Forms.TextBox();
             this.textBox46 = new System.Windows.Forms.TextBox();
@@ -105,7 +104,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnNomeUsuario = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnSaida = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -152,17 +150,6 @@
             this.textBox42.Name = "textBox42";
             this.textBox42.Size = new System.Drawing.Size(175, 13);
             this.textBox42.TabIndex = 145;
-            // 
-            // textBox43
-            // 
-            this.textBox43.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox43.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox43.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox43.Location = new System.Drawing.Point(976, 411);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(146, 14);
-            this.textBox43.TabIndex = 144;
             // 
             // textBox44
             // 
@@ -914,7 +901,6 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnNomeUsuario);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(274, 707);
@@ -966,24 +952,6 @@
             this.btnNomeUsuario.Text = "Nome do Usuário";
             this.btnNomeUsuario.UseVisualStyleBackColor = false;
             // 
-            // button1
-            // 
-            this.button1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Crimson;
-            this.button1.Location = new System.Drawing.Point(12, 309);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 36);
-            this.button1.TabIndex = 73;
-            this.button1.Text = "Entrada e Saída";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // btnSaida
             // 
             this.btnSaida.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -1010,7 +978,6 @@
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.textBox42);
-            this.Controls.Add(this.textBox43);
             this.Controls.Add(this.textBox44);
             this.Controls.Add(this.textBox45);
             this.Controls.Add(this.textBox46);
@@ -1093,7 +1060,6 @@
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
         private System.Windows.Forms.TextBox textBox44;
         private System.Windows.Forms.TextBox textBox45;
         private System.Windows.Forms.TextBox textBox46;
@@ -1166,7 +1132,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnNomeUsuario;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSaida;
         private System.Windows.Forms.Button button2;
     }
