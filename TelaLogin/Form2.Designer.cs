@@ -29,16 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pctPessoa = new System.Windows.Forms.PictureBox();
-            this.pctCadeado = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.txtSenhaRegistro = new System.Windows.Forms.TextBox();
             this.txtUsuarioRegistro = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pctCadeado2 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.txtSenhaRegistroConfirmar = new System.Windows.Forms.TextBox();
-            this.pctPessoa2 = new System.Windows.Forms.PictureBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,10 +42,14 @@
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.pctEmail = new System.Windows.Forms.PictureBox();
+            this.pctCadeado2 = new System.Windows.Forms.PictureBox();
+            this.pctPessoa = new System.Windows.Forms.PictureBox();
+            this.pctCadeado = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pctEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCadeado2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPessoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCadeado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctCadeado2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctPessoa2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,24 +59,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(274, 561);
             this.panel1.TabIndex = 1;
-            // 
-            // pctPessoa
-            // 
-            this.pctPessoa.Image = global::TelaLogin.Properties.Resources.pessoacerta;
-            this.pctPessoa.Location = new System.Drawing.Point(348, 137);
-            this.pctPessoa.Name = "pctPessoa";
-            this.pctPessoa.Size = new System.Drawing.Size(22, 23);
-            this.pctPessoa.TabIndex = 24;
-            this.pctPessoa.TabStop = false;
-            // 
-            // pctCadeado
-            // 
-            this.pctCadeado.Image = global::TelaLogin.Properties.Resources.cadeadocerto;
-            this.pctCadeado.Location = new System.Drawing.Point(348, 251);
-            this.pctCadeado.Name = "pctCadeado";
-            this.pctCadeado.Size = new System.Drawing.Size(18, 25);
-            this.pctCadeado.TabIndex = 25;
-            this.pctCadeado.TabStop = false;
             // 
             // flowLayoutPanel2
             // 
@@ -97,8 +79,7 @@
             this.txtSenhaRegistro.Name = "txtSenhaRegistro";
             this.txtSenhaRegistro.PasswordChar = '*';
             this.txtSenhaRegistro.Size = new System.Drawing.Size(206, 22);
-            this.txtSenhaRegistro.TabIndex = 22;
-            this.txtSenhaRegistro.TabStop = false;
+            this.txtSenhaRegistro.TabIndex = 7;
             this.txtSenhaRegistro.Text = "Senha";
             this.txtSenhaRegistro.Click += new System.EventHandler(this.txtSenhaRegistro_Click_1);
             // 
@@ -112,8 +93,7 @@
             this.txtUsuarioRegistro.Location = new System.Drawing.Point(373, 139);
             this.txtUsuarioRegistro.Name = "txtUsuarioRegistro";
             this.txtUsuarioRegistro.Size = new System.Drawing.Size(206, 22);
-            this.txtUsuarioRegistro.TabIndex = 21;
-            this.txtUsuarioRegistro.TabStop = false;
+            this.txtUsuarioRegistro.TabIndex = 5;
             this.txtUsuarioRegistro.Text = "Usuário";
             this.txtUsuarioRegistro.Click += new System.EventHandler(this.txtUsuarioRegistro_Click);
             // 
@@ -124,15 +104,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(236, 2);
             this.flowLayoutPanel1.TabIndex = 20;
-            // 
-            // pctCadeado2
-            // 
-            this.pctCadeado2.Image = global::TelaLogin.Properties.Resources.cadeadocerto;
-            this.pctCadeado2.Location = new System.Drawing.Point(348, 323);
-            this.pctCadeado2.Name = "pctCadeado2";
-            this.pctCadeado2.Size = new System.Drawing.Size(18, 25);
-            this.pctCadeado2.TabIndex = 28;
-            this.pctCadeado2.TabStop = false;
             // 
             // flowLayoutPanel3
             // 
@@ -153,19 +124,9 @@
             this.txtSenhaRegistroConfirmar.Name = "txtSenhaRegistroConfirmar";
             this.txtSenhaRegistroConfirmar.PasswordChar = '*';
             this.txtSenhaRegistroConfirmar.Size = new System.Drawing.Size(206, 22);
-            this.txtSenhaRegistroConfirmar.TabIndex = 26;
-            this.txtSenhaRegistroConfirmar.TabStop = false;
+            this.txtSenhaRegistroConfirmar.TabIndex = 8;
             this.txtSenhaRegistroConfirmar.Text = "Senha";
             this.txtSenhaRegistroConfirmar.Click += new System.EventHandler(this.txtSenhaRegistroConfirmar_Click);
-            // 
-            // pctPessoa2
-            // 
-            this.pctPessoa2.Image = global::TelaLogin.Properties.Resources.pessoacerta;
-            this.pctPessoa2.Location = new System.Drawing.Point(348, 199);
-            this.pctPessoa2.Name = "pctPessoa2";
-            this.pctPessoa2.Size = new System.Drawing.Size(22, 23);
-            this.pctPessoa2.TabIndex = 31;
-            this.pctPessoa2.TabStop = false;
             // 
             // txtEmail
             // 
@@ -177,8 +138,7 @@
             this.txtEmail.Location = new System.Drawing.Point(373, 201);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(206, 22);
-            this.txtEmail.TabIndex = 30;
-            this.txtEmail.TabStop = false;
+            this.txtEmail.TabIndex = 6;
             this.txtEmail.Text = "Email";
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             // 
@@ -215,7 +175,7 @@
             this.btnRegistrar.Location = new System.Drawing.Point(347, 386);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(232, 46);
-            this.btnRegistrar.TabIndex = 33;
+            this.btnRegistrar.TabIndex = 9;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
@@ -229,7 +189,7 @@
             this.btnFechar.Location = new System.Drawing.Point(639, 12);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(33, 30);
-            this.btnFechar.TabIndex = 34;
+            this.btnFechar.TabIndex = 12;
             this.btnFechar.Text = "X";
             this.btnFechar.UseVisualStyleBackColor = false;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
@@ -243,7 +203,8 @@
             this.btnMinimizar.Location = new System.Drawing.Point(600, 12);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(33, 30);
-            this.btnMinimizar.TabIndex = 35;
+            this.btnMinimizar.TabIndex = 11;
+            this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Text = "--";
             this.btnMinimizar.UseVisualStyleBackColor = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
@@ -262,10 +223,46 @@
             this.btnLogin.Location = new System.Drawing.Point(347, 468);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(232, 46);
-            this.btnLogin.TabIndex = 36;
+            this.btnLogin.TabIndex = 10;
             this.btnLogin.Text = "Entrar";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // pctEmail
+            // 
+            this.pctEmail.Image = global::TelaLogin.Properties.Resources.email;
+            this.pctEmail.Location = new System.Drawing.Point(347, 200);
+            this.pctEmail.Name = "pctEmail";
+            this.pctEmail.Size = new System.Drawing.Size(22, 23);
+            this.pctEmail.TabIndex = 31;
+            this.pctEmail.TabStop = false;
+            // 
+            // pctCadeado2
+            // 
+            this.pctCadeado2.Image = global::TelaLogin.Properties.Resources.cadeadocerto;
+            this.pctCadeado2.Location = new System.Drawing.Point(348, 323);
+            this.pctCadeado2.Name = "pctCadeado2";
+            this.pctCadeado2.Size = new System.Drawing.Size(18, 25);
+            this.pctCadeado2.TabIndex = 28;
+            this.pctCadeado2.TabStop = false;
+            // 
+            // pctPessoa
+            // 
+            this.pctPessoa.Image = global::TelaLogin.Properties.Resources.pessoacerta;
+            this.pctPessoa.Location = new System.Drawing.Point(348, 137);
+            this.pctPessoa.Name = "pctPessoa";
+            this.pctPessoa.Size = new System.Drawing.Size(22, 23);
+            this.pctPessoa.TabIndex = 24;
+            this.pctPessoa.TabStop = false;
+            // 
+            // pctCadeado
+            // 
+            this.pctCadeado.Image = global::TelaLogin.Properties.Resources.cadeadocerto;
+            this.pctCadeado.Location = new System.Drawing.Point(348, 251);
+            this.pctCadeado.Name = "pctCadeado";
+            this.pctCadeado.Size = new System.Drawing.Size(18, 25);
+            this.pctCadeado.TabIndex = 25;
+            this.pctCadeado.TabStop = false;
             // 
             // Form2
             // 
@@ -277,7 +274,7 @@
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pctPessoa2);
+            this.Controls.Add(this.pctEmail);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.flowLayoutPanel4);
             this.Controls.Add(this.pctCadeado2);
@@ -295,10 +292,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pctEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCadeado2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPessoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCadeado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctCadeado2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctPessoa2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,7 +313,7 @@
         private System.Windows.Forms.PictureBox pctCadeado2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.TextBox txtSenhaRegistroConfirmar;
-        public System.Windows.Forms.PictureBox pctPessoa2;
+        public System.Windows.Forms.PictureBox pctEmail;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.Label label1;

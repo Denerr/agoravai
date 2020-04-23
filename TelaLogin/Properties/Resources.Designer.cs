@@ -133,6 +133,26 @@ namespace TelaLogin.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap email {
+            get {
+                object obj = ResourceManager.GetObject("email", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emailrosa {
+            get {
+                object obj = ResourceManager.GetObject("emailrosa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cadeado_2_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cadeado-2-50", resourceCulture);
@@ -146,6 +166,16 @@ namespace TelaLogin.Properties {
         internal static System.Drawing.Bitmap icons8_cadeado_2_50__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-cadeado-2-50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_editar_utilizador_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-editar-utilizador-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

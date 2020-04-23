@@ -68,10 +68,7 @@ namespace TelaLogin
 
         }
 
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
         {
@@ -90,6 +87,10 @@ namespace TelaLogin
             if(nome != "" && senha != "")
             {
                 MessageBox.Show("Bem Vindo "+ nome + "!!!");
+
+                var Form3 = new Form3();
+                this.Hide(); //vai “esconder” o formulário atual
+                Form3.ShowDialog();
             }
 
           

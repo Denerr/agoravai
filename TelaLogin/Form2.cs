@@ -38,7 +38,7 @@ namespace TelaLogin
             txtSenhaRegistro.ForeColor = Color.FromArgb(105, 105, 105);
             pctCadeado2.Image = Properties.Resources.cadeadocerto;
             txtSenhaRegistro.ForeColor = Color.FromArgb(105, 105, 105);
-            pctPessoa2.Image = Properties.Resources.pessoacerta;
+            pctEmail.Image = Properties.Resources.email;
             txtSenhaRegistroConfirmar.ForeColor = Color.FromArgb(105, 105, 105);
             txtEmail.ForeColor = Color.FromArgb(105, 105, 105);
 
@@ -48,7 +48,7 @@ namespace TelaLogin
         {
             txtEmail.Clear();
 
-            pctPessoa2.Image = Properties.Resources.pessoacertarosa;
+            pctEmail.Image = Properties.Resources.emailrosa;
             panel1.BackColor = Color.FromArgb(220, 20, 60);
             txtEmail.ForeColor = Color.FromArgb(220, 20, 60);
 
@@ -70,7 +70,7 @@ namespace TelaLogin
 
             pctPessoa.Image = Properties.Resources.pessoacerta;
             txtUsuarioRegistro.ForeColor = Color.FromArgb(105, 105, 105);
-            pctPessoa2.Image = Properties.Resources.pessoacerta;
+            pctEmail.Image = Properties.Resources.email;
             txtEmail.ForeColor = Color.FromArgb(105, 105, 105);
             pctCadeado2.Image = Properties.Resources.cadeadocerto;
             txtSenhaRegistroConfirmar.ForeColor = Color.FromArgb(105, 105, 105);
@@ -85,7 +85,7 @@ namespace TelaLogin
 
             pctPessoa.Image = Properties.Resources.pessoacerta;
             txtUsuarioRegistro.ForeColor = Color.FromArgb(105, 105, 105);
-            pctPessoa2.Image = Properties.Resources.pessoacerta;
+            pctEmail.Image = Properties.Resources.email;
             txtEmail.ForeColor = Color.FromArgb(105, 105, 105);
             pctCadeado.Image = Properties.Resources.cadeadocerto;
             txtSenhaRegistro.ForeColor = Color.FromArgb(105, 105, 105);
@@ -125,6 +125,8 @@ namespace TelaLogin
                 MessageBox.Show("Cadastro Feito com Sucesso!!!");
             }
         }
+
+
     }
     
 }

@@ -36,15 +36,15 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pctCadeado = new System.Windows.Forms.PictureBox();
+            this.btnFechar = new System.Windows.Forms.Button();
+            this.btnMinimizar = new System.Windows.Forms.Button();
             this.pctPessoa = new System.Windows.Forms.PictureBox();
+            this.pctCadeado = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnFechar = new System.Windows.Forms.Button();
-            this.btnMinimizar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pctCadeado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPessoa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCadeado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -77,11 +77,11 @@
             this.txtUsuario.Location = new System.Drawing.Point(365, 137);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(206, 22);
-            this.txtUsuario.TabIndex = 7;
-            this.txtUsuario.TabStop = false;
+            this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.Tag = "";
             this.txtUsuario.Text = "Usuário";
             this.txtUsuario.Click += new System.EventHandler(this.txtUsuario_Click);
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
+
             // 
             // txtSenha
             // 
@@ -94,8 +94,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(206, 22);
-            this.txtSenha.TabIndex = 8;
-            this.txtSenha.TabStop = false;
+            this.txtSenha.TabIndex = 3;
             this.txtSenha.Text = "Senha";
             this.txtSenha.Click += new System.EventHandler(this.txtSenha_Click);
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
@@ -114,7 +113,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(346, 289);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(232, 46);
-            this.btnEntrar.TabIndex = 9;
+            this.btnEntrar.TabIndex = 4;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
@@ -133,7 +132,7 @@
             this.btnRegistrar.Location = new System.Drawing.Point(346, 363);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(232, 46);
-            this.btnRegistrar.TabIndex = 10;
+            this.btnRegistrar.TabIndex = 5;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
@@ -146,7 +145,7 @@
             this.label1.Location = new System.Drawing.Point(419, 451);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
-            this.label1.TabIndex = 14;
+            this.label1.TabIndex = 1;
             this.label1.Text = "Entre com";
             // 
             // flowLayoutPanel2
@@ -157,14 +156,35 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(236, 2);
             this.flowLayoutPanel2.TabIndex = 17;
             // 
-            // pctCadeado
+            // btnFechar
             // 
-            this.pctCadeado.Image = global::TelaLogin.Properties.Resources.cadeadocerto;
-            this.pctCadeado.Location = new System.Drawing.Point(340, 219);
-            this.pctCadeado.Name = "pctCadeado";
-            this.pctCadeado.Size = new System.Drawing.Size(18, 25);
-            this.pctCadeado.TabIndex = 19;
-            this.pctCadeado.TabStop = false;
+            this.btnFechar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.ForeColor = System.Drawing.Color.Crimson;
+            this.btnFechar.Location = new System.Drawing.Point(639, 12);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(33, 30);
+            this.btnFechar.TabIndex = 10;
+            this.btnFechar.TabStop = false;
+            this.btnFechar.Text = "X";
+            this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimizar.ForeColor = System.Drawing.Color.Crimson;
+            this.btnMinimizar.Location = new System.Drawing.Point(600, 12);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(33, 30);
+            this.btnMinimizar.TabIndex = 9;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Text = "--";
+            this.btnMinimizar.UseVisualStyleBackColor = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // pctPessoa
             // 
@@ -174,6 +194,15 @@
             this.pctPessoa.Size = new System.Drawing.Size(22, 23);
             this.pctPessoa.TabIndex = 18;
             this.pctPessoa.TabStop = false;
+            // 
+            // pctCadeado
+            // 
+            this.pctCadeado.Image = global::TelaLogin.Properties.Resources.cadeadocerto;
+            this.pctCadeado.Location = new System.Drawing.Point(340, 219);
+            this.pctCadeado.Name = "pctCadeado";
+            this.pctCadeado.Size = new System.Drawing.Size(18, 25);
+            this.pctCadeado.TabIndex = 19;
+            this.pctCadeado.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -205,34 +234,6 @@
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             // 
-            // btnFechar
-            // 
-            this.btnFechar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.ForeColor = System.Drawing.Color.Crimson;
-            this.btnFechar.Location = new System.Drawing.Point(639, 12);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(33, 30);
-            this.btnFechar.TabIndex = 20;
-            this.btnFechar.Text = "X";
-            this.btnFechar.UseVisualStyleBackColor = false;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinimizar.ForeColor = System.Drawing.Color.Crimson;
-            this.btnMinimizar.Location = new System.Drawing.Point(600, 12);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(33, 30);
-            this.btnMinimizar.TabIndex = 21;
-            this.btnMinimizar.Text = "--";
-            this.btnMinimizar.UseVisualStyleBackColor = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,8 +259,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "p";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pctCadeado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPessoa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCadeado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
